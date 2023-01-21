@@ -50,9 +50,6 @@ class LongLong{
             }
             return number;
         }
-        void display(){
-            cout << "high: " << high << "\t" << "low: " << low << "\n";
-        }
         long long number(){
             return stoll(get_string());
         }
@@ -81,8 +78,8 @@ class LongLong{
 int main()
 {
     LongLong x = LongLong("-23512293475092345");
-    LongLong y = x;
-    x.display();
-    cout << y.number();
+    LongLong y = LongLong("1234567890");
+    LongLong z = x * y;
+    cout << z.number();
     return 0;
 }
